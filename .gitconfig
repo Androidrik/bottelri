@@ -1,0 +1,31 @@
+[core]
+	autocrlf = false
+	editor = vim
+	mergetool = tortoisemerge
+[alias]
+	ct = commit
+	st = status
+	co = checkout
+	br = branch
+	lg = log --graph --pretty=format:'%Cred%h%Creset %C(bold blue)%an: %C(yellow)%d%Creset %s %Cgreen(%cr) %Creset' --abbrev-commit --date=relative
+	cp = cherry-pick
+	track = "!f() { ([ $# -eq 2 ] && ( echo \"Setting tracking for branch \" $1 \" -> \" $2;git branch --set-upstream $1 $2; ) || ( git for-each-ref --format=\"local: %(refname:short) <--sync--> remote: %(upstream:short)\" refs/heads && echo --Remotes && git remote -v)); }; f"
+	ignore = update-index --assume-unchanged
+	sdc = ./tncheck.bat && git svn dcommit
+	qlg = log --graph --pretty=format:'%Cred%h%Creset %C(bold blue)%an: %C(yellow)%d%Creset %s %Cgreen(%cr) %Creset' --abbrev-commit --date=relative -5
+[user]
+	name = Rik Bottelier
+	email = rik.bottelier@sogeti.nl
+[merge]
+	tool = tortoisemerge
+[merge "tortoisemerge"]
+	path = C:\\\\Program Files\\\\TortoiseSVN\\\\bin\\\\tortoisemerge.exe
+[color]
+        diff = auto
+        status = auto
+        branch = auto
+        interactive = auto
+        ui = true
+        pager = true
+	
+	

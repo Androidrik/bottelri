@@ -1,0 +1,12 @@
+*.log
+.cpan
+.ssh/
+.bash*
+.git_completion.sh
+.git_prompt.sh
+.lesshst
+.minttyrc
+.psql_history
+.subversion
+.viminfo
+.vimrc
