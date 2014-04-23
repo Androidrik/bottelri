@@ -21,8 +21,13 @@ alias commit='~/commit.sh'
 
 #git
 alias up='git svn rebase'
-alias tmpct="git add . && git commit -m \"tmp\" && git lg -1"
+alias tmpct="git add . && git commit -m \"tmp\" && git lg -1 && git checkout dev"
 alias rmct="git reset HEAD~1"
+alias galias="git config --get-regexp alias"
+
+
+#dos
+alias find='/usr/bin/find'
 
 
 
